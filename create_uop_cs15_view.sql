@@ -125,7 +125,7 @@ WHERE  t2.s_Id (+)  = t1.p_Id
        and agladdr."attribute_id" (+) = 'A4'
        and agladdr."address_type" (+) = '1'
        and ltel.t_id (+) = s_studentlocaltelephon
-      and t2.s_studentreference = '10538344'
+      --and t2.s_studentreference = '10538344'
       and agr_ho_status.agr_s_id (+) = t2.s_studentreference
 )
 where academicyear = (select ic_text2 from capd_institution i, capd_institutioncustom ic
